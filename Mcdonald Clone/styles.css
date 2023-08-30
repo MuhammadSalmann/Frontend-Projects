@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*                        NAVBAR */
+.navbar {
+    background-color: #ffffff;
+    height: 116px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-cont {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 5px 0 3px;
+    background-image: url(imgs/McDonalds_Logo.png);
+    height: 108px;
+    width: 108px;
+    cursor: pointer;
+}
+
+.upper-nav {
+    height: 64px;
+    width: 100%;
+    display: flex;
+}
+
+.first-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.first-half a {
+    margin: 0 9px;
+    cursor: pointer;
+}
+
+.second-half {
+    font-size: 0.95rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.second-half a {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.order-btn {
+    /* flex: 1; */
+    border: none;
+    border-radius: 5px;
+    background: #ffbc0d;
+    height: 41px;
+    width: 193px;
+    font-size: 0.96rem;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+
+.lower-nav {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    margin-left: 9px;
+}
+
+.lower-nav a {
+    margin-right: 30px;
+}
+
+.lower-nav a:hover{
+    border-bottom: 4px solid #DB0007;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 117px;
+    height: 400px;
+    background-color: #ffffff;
+    width: 100%;
+    border-top: 1px solid #F5F5F5;
+    display: none;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+.menu-row-cont {
+    display: flex;
+    width: 18%;
+}
+.menu-row-cont a {
+    margin-left: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.menu-row .menu-btn {
+    border: 1px solid #bec1c5;
+    border-radius: 4px;
+    height: 45px;
+    width: 160px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/*                                   HEADLINE SECTION */
+
+.hero-side {
+    height: 84.3vh;
+    width: 100%;
+    padding: 35px 0;
+    background-color: #6a656507;
+    display: flex;
+    justify-content: center;
+}
+
+.advertisements {
+    height: 500px;
+    width: 75%;
+    background-image: url(imgs/adv-1.png);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+
+.adv-box {
+    height: 300px;
+    width: 385px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 0 0 40px 40px;
+    padding: 25px 5px 25px 35px;
+}
+
+.adv-box h1 { font-weight: 700; }
+.adv-box p { margin: 30px 0; }
+.adv-box button { margin: 10px 0 0 0; }
+
+.bullets {
+    cursor: pointer;
+    font-size: 13px;
+    color: #bec1c5;
+    margin-top: 20px;
+}
+
+.bullets-icon:hover {
+    transition: 1s ease-out;
+    color: #DB0007;
+}
+
+.active { color: #DB0007; }
+
+
+
+/*                  CARDS SECTION */
+
+.cards-section {
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 460px;
+    width: 368px;
+    background-color: #ffffffa4;
+    margin: 11px;
+    border: 1px solid #bec1c5;
+    border-radius: 5px;
+    color: #292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.card h1 { 
+    color: #DB0007; 
+    margin: 10px 0 25px;
+    text-align: center;
+}
+
+.card p { 
+    text-align: center;
+    margin: 0 20px 50px;
+    font-size: 1.1rem;
+}
+
+.card button { align-self: center; }  /* this property can be used by children of parent flexbox */
+
+.card-1 { background-image: url(imgs/pic1.jpg); height: 160px; background-size: cover; border-radius: 5px; }
+.card-2 { background-image: url(imgs/pic2.jpg); height: 160px; background-size: cover; border-radius: 5px; }
+.card-3 { background-image: url(imgs/pic3.jpg); height: 160px; background-size: cover; border-radius: 5px; }
+.card-4 { background-image: url(imgs/pic4.png); height: 160px; background-size: cover; border-radius: 5px; }
+.card-5 { background-image: url(imgs/pic5.png); height: 160px; background-size: cover; border-radius: 5px; }
+.card-6 { background-image: url(imgs/pic6.png); height: 160px; background-size: cover; border-radius: 5px; }
+
+/*                  footer */
+footer {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    height: 60%;
+    width: 75vw;
+    margin-top: 80px;
+}
+
+.trademarks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trademarks ul p {
+    font-weight: bolder;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.trademarks ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.socials {
+    margin-top: 33px;
+    height: 85px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #99A5BE;
+}
+
+.socials .icon {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #99A5BE;
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials .icon:hover {
+    transition: 0.5s ease-out;     /* ease is default */
+    color: #ffffff;
+    background-color: #db000781;
+}
+
+.socials .store-cont {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.socials .store {
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.socials .apple {
+    background-image: url(imgs/ios.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+.socials .play {
+    background-image: url(imgs/play.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.copyrights {
+    margin-top: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.copyrights a {
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.copyright-tag {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.copyright-tag img {
+    position: relative;
+    bottom: 6px;
+    width: 30px;
+    height: 30px;
+}
