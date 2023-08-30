@@ -1,0 +1,532 @@
+@font-face { font-family: Arpona; src: url(asset/Fontspring-DEMO-arpona-blackitalic.otf); } 
+@font-face { font-family: Franklin; src: url(asset/FontsFree-Net-FRANKGO.ttf); } 
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 { font-family: 'Arpona'; }
+
+nav {
+    background-color: #000000;
+    padding: 0px 125px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    /* height: 20; */
+}
+
+.nav-upper {
+    height: 50px;
+    display: flex;
+    border-bottom: 2px solid white;
+}
+
+.first-half {
+    width: 15%;
+    display: flex;
+    cursor: pointer;
+}
+
+.first-half img {
+    /* align-self: center; */
+    width: 20px;
+    height: 23px;
+    margin-top: 10px;
+}
+
+.first-half p {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1rem;
+    align-self: center;
+    margin-left: 8px;
+    line-height: 1.5;
+    /* letter-spacing: normal; */
+}
+
+.yellow-filling:hover { color: #ffc72c; }
+
+.second-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.second-half .cont {
+    display: flex;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.second-half img {
+    width: 21px;
+    height: 21px;
+}
+
+.second-half a {
+    font-size: 0.85rem;
+    font-weight: 600;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.nav-lower {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-lower-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-lower-container img {
+    width: 170px;
+    height: 50px;
+}
+
+.nav-lower .tabs-cont {
+    width: 30%;
+    height: 18px;  /* height specify kro tau wo border bottom wala masla nhi hoga */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-lower .tabs-cont a {
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.nav-lower .tabs-cont a:hover {
+    border-bottom: 2px solid #ffc72c;
+}
+
+.btn-cont {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+button {
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 30px;
+    width: 160px;
+    background-color: #ffc72c;
+    cursor: pointer;
+    color: #000000;
+    font-size: 0.95rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button .order-img {
+    background-image: url(imgs/order-icon.svg);
+    background-size: cover;
+    background-position: center;
+    width: 30px; 
+    height: 30px;
+}
+
+button:hover {
+    background-color: #ce1329;
+    color: #ffffff;
+    transition: 0.3s ease-out;
+}
+
+button:hover .order-img {
+    background-image: url(imgs/order-icon-light.svg);
+}
+
+/*                  HERO SECTION */
+
+.hero-section {
+    height: 95vh;
+    width: 100%;
+    background-image: url(imgs/hero-back.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.hero-section h1 {
+    font-size: 2.6rem;
+}
+
+.hero-section p {
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.hero-section img {
+    margin-top: 30px;
+    height: 400px;
+    width: 1400px;
+}
+.hero-section button {
+    height: 45px;
+    width: 130px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.hero-section button:hover {
+    background-color: transparent;
+    color: #000000;
+    transition: none;
+}
+
+/*                  New Member Section */
+
+.new-mem-section {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+}
+
+.new-mem-section img {
+    height: 350px;
+    width: 500px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .cont {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content h1 {
+    font-size: 2.3rem;
+    text-align: left;
+    line-height: 0.8;
+}
+
+.cont h1:nth-child(2) {
+    color: #ffc72c;
+}
+
+.content button {
+    transition: width 0.5s;
+    color: #ffffff;
+    width: 130px;
+}
+
+.content button:hover {
+    width: 160px;
+}
+
+/*            Featured MENU SECTION */
+
+.featured-menu {
+    height: 80vh;
+    width: 100%;
+    background-image: url(imgs/back2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-menu .cont-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 100px 50px;
+}
+
+.featured-menu .cont-1 h1 {
+    color: #ffffff;
+}
+
+.featured-menu .card-cont {
+    display: flex;
+    height: 420px;
+}
+
+.featured-menu .card-cont .card {
+    height: 360px;
+    width: 290px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-menu .card-img {
+    border-radius: 20px;
+    background-image: url(imgs/assets/asset\ 8.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.featured-menu .card p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.featured-menu .card p:nth-child(3) {
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+.featured-menu .card button {
+    align-self: center;
+    transition: none;
+}
+
+/*            Cartoon Section */
+
+.cartoon-section {
+    height: 75vh;
+    display: flex;
+}
+
+.cartoon-section .cont-1 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartoon-section .cont-1 .text-cont {
+    width: 70%;
+}
+
+.cartoon-section .cont-1 h1 {
+    font-size: 3rem;
+    color: #ce1329;
+}
+
+.cartoon-section .cont-1 p {
+    margin: 20px 0;
+}
+
+.cartoon-section .img-cont  {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.cartoon-section img {
+    height: 350px;
+    width: 750px;
+    margin-left: 60px;
+    object-fit: cover;
+}
+
+/*                    Latest Craving Section */
+.craving-section {
+    height: 100vh;
+    width: 100%;
+    padding: 0 90px;
+}
+
+.craving-section .cont-1 {
+    margin: 80px 0 40px;
+    height: 75px;
+    width: 100%;
+    display: flex;
+}
+
+.craving-section .cont-1 h1 {
+    flex: 1;
+    /* width: 110px; */
+    /* overflow: hidden; */
+    text-align: center;
+    line-height: 2.5;
+}
+
+.craving-section .style-img {
+    width: 30%;
+    background-image: url(imgs/style-img.png);
+    background-size: cover;
+}
+
+.craving-section .card-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.craving-section .card {
+    height: calc(100vh - 200px);
+    width: 27vw;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.craving-section .card h1 {
+    font-family: 'Franklin';
+    font-weight: normal;
+    line-height: 1;
+}
+
+.craving-section .card p {
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin: 20px 0;
+}
+
+.craving-section .card img {
+    object-fit: cover;
+    /* overflow: hidden; */
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.craving-section .card-content {
+    margin: 15px 30px 0;
+}
+
+.craving-section .card-content button {
+    width: 130px;
+}
+
+/*                   Extras Section */
+
+.extras-section {
+    height: 45vh;
+    width: 100%;
+}
+
+.extras-section .cont-1 {
+    height: 200px;
+    width: 100%;
+    background-color: #ffc72c;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mobile-img {
+    position: relative;
+    left: 150px;
+    top: 60px;
+}
+
+.extras-section .heading {
+    color: #ce1329;
+    font-family: 'Arpona';
+}
+
+.extras-section .inner-cont {
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.extras-section .inner-cont h1 {
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+}
+
+.upload-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.extras-section-2 {
+    height: calc(45vh - 200px);
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.extras-section-2 img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 75%;      /* VERY IMP IN % ME DENA HA */
+}
+
+.extras-section-2 .another-img {
+    background-image: url('imgs/assets/asset\ 24.png');
+    width: 80%;
+    background-size: cover;
+}
+
+
+/*               FOOTER */
+
+footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #000000;
+    padding: 38px 70px;
+}
+
+.main-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main-box img  {
+    width: 190px;
+    height: 54px;
+    margin: 0 140px 0 45px;
+}
+
+footer .main-footer {
+    flex: 1;
+    color: #ffffff;
+}
+
+footer .main-footer li {
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 13px;
+    font-weight: 600;
+}
+
+.soical-icons {
+    margin: 50px 20px 70px 0;
+}
+
+.links a {
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
